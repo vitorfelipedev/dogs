@@ -1,0 +1,72 @@
+.photoPost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.photoPost #img {
+  margin-bottom: 1rem;
+}
+
+.file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.fileContainer {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.fileLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+
+  background: #f7f7f7;
+  color: #333;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fileLabel:hover,
+.fileContainer:focus-within .fileLabel {
+  border-color: #fb1;
+  background: #fff7e6;
+  color: #764701;
+}
+
+.fileLabel svg {
+  width: 24px;
+  height: 24px;
+  color: inherit;
+}
+
+.preview {
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.preview::after {
+  content: '';
+  display: block;
+  height: 0px;
+  padding-bottom: 100%;
+}

@@ -1,3 +1,4 @@
+import { number } from 'prop-types';
 import React from 'react';
 
 const types = {
@@ -5,6 +6,10 @@ const types = {
     regex:
       /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i,
     message: 'Preencha um email válido',
+  },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize números apenas.',
   },
 };
 
