@@ -18,6 +18,10 @@
   padding: 0.5rem;
 }
 
+.single.form {
+  margin: 1rem 0px;
+}
+
 .textarea:focus,
 .textarea:hover {
   outline: none;
