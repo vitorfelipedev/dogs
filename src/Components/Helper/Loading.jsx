@@ -100,7 +100,6 @@ const Loading = () => {
           </g>
         </svg>
       </div>
-      Carregando...
     </div>
   );
 };
